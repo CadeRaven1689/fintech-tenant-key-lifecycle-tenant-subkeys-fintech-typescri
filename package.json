@@ -1,0 +1,23 @@
+{
+  "name": "fintech-tenant-key-lifecycle",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/tenant_payment_service.ts",
+    "demo": "node --experimental-strip-types src/run_tenant_demo.ts",
+    "test": "node --experimental-strip-types --test test/payment_risk.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3",
+    "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "license": "MIT"
+}
